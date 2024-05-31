@@ -43,7 +43,7 @@ end;
 
 
 Ans1:
-```
+```sql
 CREATE OR REPLACE FUNCTION total_emp (v_gender IN VARCHAR2) 
 RETURN NUMBER 
 IS 
@@ -65,7 +65,7 @@ END;
 ```
 
 Ans2:
-```
+```sql
 CREATE OR REPLACE FUNCTION total_emp_sal (v_gender IN VARCHAR2) RETURN NUMBER IS total gen_sal NUMBER(2) := 0; BEGIN
 SELECT SUM(SALARY) INTO total_gen_sal FROM EMP1 WHERE GENDER = v_gender; RETURN total_gen_sal;
 END;
@@ -87,7 +87,7 @@ END;
       
  Ans:
  
- ```
+ ```sql
  create table train(
 pnr number,
 name varchar2(100),
@@ -137,7 +137,7 @@ select * from cancelled;
 > Q. Write PL/SQL code block to increment the employee’s salary by 1000 whose emp_id is 102 from the given table below. 
 
 Ans:
-```
+```sql
 create table employee
 (
     emp_id number primary key,
@@ -182,7 +182,7 @@ end;
 
 Ans:
 
-```
+```sql
 CREATE OR REPLACE PROCEDURE increase_employee_salary (id IN NUMBER, increase_amount IN NUMBER) IS
   current_salary NUMBER;
 BEGIN
@@ -210,7 +210,7 @@ END;
 
 Ans: 
 
-```
+```sql
 CREATE OR REPLACE FUNCTION get_employee_annual_income (id IN NUMBER) RETURN NUMBER
 AS
   annual_income NUMBER;
@@ -232,7 +232,7 @@ END;
 
 Ans: 
 
-```
+```sql
 DECLARE
   emp_id NUMBER := 101;
   first_name VARCHAR2(50) := 'Nitin';
