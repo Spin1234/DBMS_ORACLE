@@ -6,7 +6,7 @@
 
 Function to add two numbers:
 
-```
+```sql
 declare
 a number;
 b number;
